@@ -1,9 +1,9 @@
 <?php
-/********************/
-/*    BagazMukti    */
-/*   tikusgot.net   */
-/* lolisquad.net:69 */
-/********************/
+/***********************/
+/*      BagazMukti     */
+/*     bagaz[dot]org   */
+/* bagaz@protonmail.ch */
+/***********************/
 error_reporting(0);
 include('config.php');
 include('function.php');
@@ -11,12 +11,12 @@ $script = $argv[0];
 $target = $argv[1];
 
 if(!file_get_contents('https://bagazmukti.github.io')) {
-	echo "Error: No internet connection!\nExit!";
+	echo "Error: No internet connection!\nExit!\n";
 	exit;
 }
 if(!checktoken($token) || !checktarget($token, $target)) {
 	echo "/********************/
-/*  Spam Like 2k17  */
+/*  Spam Like 2k18  */
 /********************/
 Usage: php ".$script." <target>
 Error: Invalid token or target!\nExit!";
@@ -25,7 +25,7 @@ Error: Invalid token or target!\nExit!";
 
 $info = getdata($token, $target);
 echo "/********************/
-/*  Spam Like 2k17  */
+/*  Spam Like 2k18  */
 /********************/
 =[ TARGET INFO ]=
 Name: ".$info->name."
@@ -44,4 +44,5 @@ foreach($json->data as $data) {
 	}
 	sleep(1);
 }
+// Say hello to amuri
 ?>
