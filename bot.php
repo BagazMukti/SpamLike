@@ -42,7 +42,7 @@ foreach($json->data as $data) {
 	} else {
 		echo "[FAILED] ". $data->id ."\n";
 	}
-	sleep(1);
+	sleep(10);
 }
 // Say hello to amuri
 ?>
